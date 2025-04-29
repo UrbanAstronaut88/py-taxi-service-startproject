@@ -11,7 +11,7 @@ class Manufacturer(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=100, unique=True)
-    password = models.CharField(max_length=100)
+    # password = models.CharField(max_length=128)
 
     class Meta:
         verbose_name_plural = "Drivers"

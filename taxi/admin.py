@@ -11,7 +11,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
 
 
 @admin.register(Driver)
-class DriverAdmin(admin.ModelAdmin):
+class DriverAdmin(UserAdmin):
     model = Driver
     list_display = ["username", "license_number", ]
     search_fields = ["username", ]
